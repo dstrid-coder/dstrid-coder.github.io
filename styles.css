@@ -662,6 +662,13 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+/* Shrink before the heading is forced to wrap onto its own line */
+@media (max-width: 900px) {
+  .hero-logo {
+    width: 240px;
+  }
+}
+
 @media (max-width: 600px) {
   .hero-logo {
     width: 280px;
