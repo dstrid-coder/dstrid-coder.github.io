@@ -655,6 +655,19 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+/* Homepage logo — twice the size of .header-graphic used on other pages */
+.hero-logo {
+  width: 360px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .hero-logo {
+    width: 280px;
+  }
+}
+
 footer {
   max-width: 900px;
   margin: 0 auto;
