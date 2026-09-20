@@ -657,21 +657,21 @@ h1 {
 
 /* Homepage logo — twice the size of .header-graphic used on other pages */
 .hero-logo {
-  width: 360px;
+  width: 280px;
   height: auto;
   margin-bottom: 1.5rem;
 }
 
-/* Shrink before the heading is forced to wrap onto its own line */
+/* Shrink further before the heading is forced to wrap onto its own line */
 @media (max-width: 900px) {
   .hero-logo {
-    width: 240px;
+    width: 200px;
   }
 }
 
 @media (max-width: 600px) {
   .hero-logo {
-    width: 280px;
+    width: 220px;
   }
 }
 
