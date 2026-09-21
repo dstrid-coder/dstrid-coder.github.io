@@ -730,3 +730,108 @@ footer::before {
     width: 140px;
   }
 }
+
+/* Colour-coded grade ladder for marking criteria (NE/EM/EF/EX or Achieved/Merit/Excellence) */
+.grade-ladder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1rem 0 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.grade-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 8px;
+  background: var(--stone);
+  border-left: 4px solid transparent;
+}
+
+.grade-badge .grade-label {
+  flex-shrink: 0;
+  display: inline-block;
+  min-width: 3.4rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+  color: #fff;
+  margin-top: 0.1rem;
+}
+
+.grade-badge p {
+  margin: 0;
+  font-size: 0.92rem;
+  padding-top: 0.15rem;
+}
+
+/* Four-tier scale: No Evidence -> Emerging -> Effective -> Exemplary */
+.grade-ne { border-left-color: #9096a3; }
+.grade-ne .grade-label { background: #9096a3; }
+
+.grade-em { border-left-color: #6f9bd1; }
+.grade-em .grade-label { background: #6f9bd1; }
+
+.grade-ef { border-left-color: #2f5fa8; }
+.grade-ef .grade-label { background: #2f5fa8; }
+
+.grade-ex { border-left-color: var(--navy-deep); }
+.grade-ex .grade-label { background: var(--navy-deep); }
+
+/* Three-tier scale: Achieved -> Merit -> Excellence */
+.grade-a { border-left-color: #6f9bd1; }
+.grade-a .grade-label { background: #6f9bd1; }
+
+.grade-m { border-left-color: #2f5fa8; }
+.grade-m .grade-label { background: #2f5fa8; }
+
+.grade-e { border-left-color: var(--navy-deep); }
+.grade-e .grade-label { background: var(--navy-deep); }
+
+/* Numbered task list — for "what you'll do" / structure & guide steps */
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: task;
+}
+
+.task-list li {
+  position: relative;
+  padding: 0.9rem 0 0.9rem 2.7rem;
+  border-bottom: 1px solid rgba(27,31,43,0.1);
+  font-size: 0.95rem;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+.task-list li::before {
+  counter-increment: task;
+  content: counter(task);
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-list strong {
+  color: var(--navy);
+}
