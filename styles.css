@@ -935,3 +935,15 @@ footer::before {
 .card-pe { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23112E67%22%20stroke-width%3D%222%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2210%22%20r%3D%224%22/%3E%3Cpath%20d%3D%22M28%2016%20L20%2022%20L10%2020%20M20%2022%20L24%2032%20L18%2042%20M24%2032%20L34%2036%20L40%2030%22/%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2220%22%20r%3D%221.8%22%20fill%3D%22%23DA2127%22%20stroke%3D%22none%22/%3E%3C/svg%3E"); }
 .card-health { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23112E67%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M24%2039%20C10%2030%205%2021%209%2014%20C13%207%2022%208%2024%2016%20C26%208%2035%207%2039%2014%20C43%2021%2038%2030%2024%2039%20Z%22/%3E%3Cpath%20d%3D%22M20%2023%20H24%20V19%20H28%20V23%20H32%20V27%20H28%20V31%20H24%20V27%20H20%20Z%22%20fill%3D%22%23DA2127%22%20stroke%3D%22none%22/%3E%3C/svg%3E"); }
 .card-hpe { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23112E67%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%2024%20L24%208%20L42%2024%22/%3E%3Cpath%20d%3D%22M11%2022%20V40%20H37%20V22%22/%3E%3Cpath%20d%3D%22M20%2040%20V29%20H28%20V40%22/%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%228%22%20r%3D%222%22%20fill%3D%22%23DA2127%22%20stroke%3D%22none%22/%3E%3C/svg%3E"); }
+/* ===== Page background tints — matches each page's topic-banner accent colour ===== */
+:root {
+  --tint-gold: #FBF4DE;
+  --tint-red: #FBEAEA;
+  --tint-navy: #E9EEF7;
+  --tint-pink: #F8EAEE;
+}
+
+body.theme-gold { background: var(--tint-gold); }
+body.theme-red { background: var(--tint-red); }
+body.theme-navy { background: var(--tint-navy); }
+body.theme-pink { background: var(--tint-pink); }
