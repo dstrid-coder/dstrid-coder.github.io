@@ -956,3 +956,32 @@ body.theme-gold { background: var(--tint-gold); }
 body.theme-red { background: var(--tint-red); }
 body.theme-navy { background: var(--tint-navy); }
 body.theme-pink { background: var(--tint-pink); }
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  /* room above the card, and a strip of photo below it so the group shows */
+  padding: clamp(1.25rem, 4vw, 3rem) clamp(1rem, 4vw, 3rem) clamp(11rem, 30vw, 22rem);
+  background-color: #112E67; /* navy fallback if the photo fails to load */
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(17, 46, 103, 0.92) 0%,
+      rgba(17, 46, 103, 0.80) 40%,
+      rgba(17, 46, 103, 0.30) 72%,
+      rgba(17, 46, 103, 0.45) 100%
+    ),
+    url("hero-photo.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 -4px 0 #D4AF37; /* gold base line */
+}
+
+/* keep the existing white card sitting cleanly on top of the photo */
+.hero-banner .hero-panel {
+  position: relative;
+  margin-bottom: 0;
+}
