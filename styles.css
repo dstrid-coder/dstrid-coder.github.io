@@ -998,3 +998,43 @@ body.theme-pink { background: var(--tint-pink); }
   background-position: center;
   background-repeat: no-repeat;
 }
+/* Health Topic Icons */
+.topic-icon-health-hub,
+.topic-icon-health-91236,
+.topic-icon-health-91239,
+.topic-icon-health-91237,
+.topic-icon-health-91235 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Hub Icon */
+.topic-icon-health-hub {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23112E67" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10" stroke="%23DA2127"/></svg>');
+}
+
+/* AS91236 Icon - Resilience / Growth */
+.topic-icon-health-91236 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23112E67" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M9 11l3-3 3 3" stroke="%23DA2127"/></svg>');
+}
+
+/* AS91239 Icon - Identity / Equality */
+.topic-icon-health-91239 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23112E67" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M9 10h6M9 14h6" stroke="%23DA2127"/></svg>');
+}
+
+/* AS91237 Icon - Community Action */
+.topic-icon-health-91237 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23112E67" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="%23DA2127"/></svg>');
+}
+
+/* AS91235 Icon - Adolescent Issues / Analysis */
+.topic-icon-health-91235 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23112E67" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/><path d="M12 7v14" stroke="%23DA2127"/></svg>');
+}
