@@ -1051,3 +1051,23 @@ body.theme-pink { background: var(--tint-pink); }
 .card .intro {
   margin-bottom: 0;
 }
+.hero-panel {
+  max-width: 680px;      /* Reduces overall card width */
+  padding: 1.5rem 2rem;  /* Reduces top/bottom internal padding */
+}
+
+.hero-panel .header-with-graphic {
+  margin-bottom: 0.75rem; /* Tightens space between header line and intro text */
+}
+
+.hero-panel h1 {
+  margin: 0;             /* Removes default top/bottom margin on the heading */
+}
+
+.hero-panel .header-graphic {
+  max-height: 70px;      /* Slightly scales down logo to fit nicely */
+}
+
+.hero-panel .intro {
+  margin: 0;             /* Eliminates extra paragraph spacing */
+}
