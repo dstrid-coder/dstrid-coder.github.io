@@ -1047,27 +1047,3 @@ body.theme-pink { background: var(--tint-pink); }
   box-shadow: 0 4px 18px rgba(17,46,103,0.06);
   margin-bottom: 2.5rem;
 }
-
-.card .intro {
-  margin-bottom: 0;
-}
-.hero-panel {
-  max-width: 680px;      /* Reduces overall card width */
-  padding: 1.5rem 2rem;  /* Reduces top/bottom internal padding */
-}
-
-.hero-panel .header-with-graphic {
-  margin-bottom: 0.75rem; /* Tightens space between header line and intro text */
-}
-
-.hero-panel h1 {
-  margin: 0;             /* Removes default top/bottom margin on the heading */
-}
-
-.hero-panel .header-graphic {
-  max-height: 70px;      /* Slightly scales down logo to fit nicely */
-}
-
-.hero-panel .intro {
-  margin: 0;             /* Eliminates extra paragraph spacing */
-}
